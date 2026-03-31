@@ -130,3 +130,10 @@ To contribute:
 4. Open a pull request describing the workflow improvement.
 
 If you plan to make a larger structural change, open an issue first so the folder layout and naming conventions can be discussed before implementation.
+
+## Third-Party Notices
+
+This repository includes content derived from kepano/obsidian-skills.
+The required copyright notice and permission notice are provided in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and must be included in all
+copies or substantial portions of the relevant content.
