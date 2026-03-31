@@ -25,6 +25,8 @@ Meta notes are about the system, not the subject matter inside the system.
 
 Create notes here when you make a structural decision that you want your future self to remember.
 
+## Usage Example
+
 Example note:
 
 ```md
@@ -40,6 +42,13 @@ Example note:
 ## Review cadence
 - Weekly review every Friday
 - Monthly review on the last day of the month
+
+> [!note] Governance
+> Update this policy whenever folder semantics change, and cross-link to [[README#Usage Examples]].
+
+## Checklist
+- [ ] Validate naming rules against current folders
+- [ ] Update onboarding links in [[Sandbox/README]]
 ```
 
 ## Where To Get Help

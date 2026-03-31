@@ -24,6 +24,8 @@ It works best when paired with [Daily](../Daily/README.md) for capture and [Mont
 
 Create one note per week, using a consistent naming scheme such as `2026-W14`.
 
+## Usage Example
+
 Example weekly note:
 
 ```md
@@ -31,6 +33,9 @@ Example weekly note:
 type: weekly
 week: 2026-W14
 reviewed: 2026-03-31
+tags:
+  - planning
+  - review
 ---
 
 # Week 14 review
@@ -44,8 +49,15 @@ reviewed: 2026-03-31
 ## Blockers
 - Need clearer folder conventions
 
+> [!tip] Weekly synthesis
+> Promote only high-signal items to [[Projects/README]] and archive the rest.
+
 ## Next week
 - Finish documentation pass
+
+## Related notes
+- [[Daily/README]]
+- [[Monthly/README]]
 ```
 
 ## Where To Get Help

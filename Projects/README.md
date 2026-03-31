@@ -23,6 +23,8 @@ If a note is still vague, start it in [Ideas](../Ideas/README.md). If it becomes
 
 Create one note per active project and keep the current status near the top.
 
+## Usage Example
+
 Example project note:
 
 ```md
@@ -39,9 +41,15 @@ tags:
 ## Outcome
 Make each top-level folder self-explanatory for new users.
 
+> [!tip] Definition of done
+> Link final guidance to [[References/README]] and attach the latest visual draft.
+
 ## Next actions
-- Update folder README files
-- Check links from the root README
+- [ ] Update folder README files
+- [ ] Check links from the root README
+
+## Assets
+![[vault-readme-structure.png]]
 
 ## Related notes
 - [[Ideas/README]]
