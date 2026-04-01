@@ -19,6 +19,44 @@
 3. [../Projects](../Projects) や [../References](../References) のノートをドラッグ
 4. 関係線やグループで構造化
 
+## 利用例
+
+`.canvas` ファイル例（obsidian-skills パターン）:
+
+```json
+{
+	"nodes": [
+		{
+			"id": "8a9b0c1d2e3f4a5b",
+			"type": "text",
+			"x": 0,
+			"y": 0,
+			"width": 300,
+			"height": 150,
+			"text": "# Main Idea\n\nThis is the central concept."
+		},
+		{
+			"id": "1a2b3c4d5e6f7a8b",
+			"type": "text",
+			"x": 400,
+			"y": -100,
+			"width": 250,
+			"height": 100,
+			"text": "## Supporting Point A\n\nDetails here."
+		}
+	],
+	"edges": [
+		{
+			"id": "3c4d5e6f7a8b9c0d",
+			"fromNode": "8a9b0c1d2e3f4a5b",
+			"fromSide": "right",
+			"toNode": "1a2b3c4d5e6f7a8b",
+			"toSide": "left"
+		}
+	]
+}
+```
+
 ## ヘルプ・サポート
 
 - Vault 全体の導入: [../README.ja.md](../README.ja.md)

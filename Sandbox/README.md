@@ -28,6 +28,43 @@ Current starting points include [Start here.md](Start%20here.md), [Guides/Get st
 
 If you want to understand the local-first model behind the vault, read [Vault is just a local folder.md](Vault%20is%20just%20a%20local%20folder.md).
 
+## Usage Example
+
+Example Obsidian Markdown note aligned with the complete example in obsidian-skills:
+
+```md
+---
+title: Project Alpha
+date: 2024-01-15
+tags:
+  - project
+  - active
+status: in-progress
+---
+
+# Project Alpha
+
+This project aims to [[improve workflow]] using modern techniques.
+
+> [!important] Key Deadline
+> The first milestone is due on ==January 30th==.
+
+## Tasks
+
+- [x] Initial planning
+- [ ] Development phase
+  - [ ] Backend implementation
+  - [ ] Frontend design
+
+## Notes
+
+The algorithm uses $O(n \log n)$ sorting. See [[Algorithm Notes#Sorting]] for details.
+
+![[Architecture Diagram.png|600]]
+
+Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
+```
+
 ## Where To Get Help
 
 - Official Obsidian documentation: https://help.obsidian.md/

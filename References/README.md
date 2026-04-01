@@ -24,6 +24,8 @@ Unlike [Projects](../Projects/README.md), reference notes should remain useful e
 
 Create notes that answer a question clearly enough for your future self to reuse.
 
+## Usage Example
+
 Example reference note:
 
 ```md
@@ -41,6 +43,12 @@ Keep project, idea, and planning notes aligned once per week.
 - Review active projects
 - Promote or archive stale ideas
 - Note blockers for next week
+
+> [!important] Reuse rule
+> Keep actionable items in [[Projects/README]] and keep principles here.
+
+## Related artifact
+![[weekly-review-checklist-v1.png]]
 ```
 
 ## Where To Get Help
