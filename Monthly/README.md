@@ -23,12 +23,17 @@ This folder works best when paired with [Weekly](../Weekly/README.md) for shorte
 
 Create one note per month, using a consistent naming pattern such as `2026-03` or `2026-03 March review`.
 
+## Usage Example
+
 Example monthly note:
 
 ```md
 ---
 type: monthly
 period: 2026-03
+tags:
+  - monthly
+  - strategy
 ---
 
 # March 2026 review
@@ -43,8 +48,15 @@ period: 2026-03
 ## What needs attention
 - Too many ideas without promotion rules
 
+> [!important] Monthly decision
+> Move actionable items to [[Projects/README]] and keep principles in [[References/README]].
+
 ## Focus for next month
 - Move active ideas into Projects
+
+## Related notes
+- [[Weekly/README]]
+- [[Projects/README]]
 ```
 
 ## Where To Get Help

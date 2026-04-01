@@ -26,6 +26,8 @@ An idea note should stay lightweight. Once it becomes actionable, move or rewrit
 3. Add just enough context to revisit it later.
 4. Review the folder during your weekly or monthly planning.
 
+## Usage Example
+
 Example note:
 
 ```md
@@ -45,6 +47,12 @@ Test a reusable weekly note template with sections for wins, blockers, and next 
 - I want to implement it this month
 - It needs multiple steps
 - It affects other notes or folders
+
+> [!note] Next capture
+> If this idea survives two weekly reviews, promote it to [[Projects/README#Usage Example]].
+
+## Draft asset
+![[weekly-review-template-sketch.png]]
 ```
 
 ## Where To Get Help

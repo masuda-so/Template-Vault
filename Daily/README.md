@@ -24,12 +24,17 @@ This folder works best when paired with [Weekly](../Weekly/README.md) for synthe
 
 Create one note per day with a consistent name such as `2026-04-01`.
 
+## Usage Example
+
 Example daily note:
 
 ```md
 ---
 type: daily
 date: 2026-04-01
+tags:
+  - journal
+  - review
 ---
 
 # 2026-04-01
@@ -40,8 +45,15 @@ date: 2026-04-01
 ## Notes
 - Weekly review worked better with clearer project status notes.
 
+> [!note] Reflection
+> Keep daily notes short and link durable insights to [[References/README]].
+
 ## Follow-up
 - [ ] Move "Weekly review prompts" from Ideas to Projects if still relevant this week.
+
+## Related notes
+- [[Weekly/README]]
+- [[Projects/README]]
 ```
 
 ## Where To Get Help

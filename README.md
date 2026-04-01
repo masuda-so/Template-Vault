@@ -73,40 +73,105 @@ The [Bases](Bases) directory contains `.base` files for common collections such 
 
 ## Usage Examples
 
-Create a project note in [Projects](Projects) with properties that work well with Bases and Obsidian search:
+The following examples are based on patterns from the obsidian-skills content under [.claude/skills](.claude/skills).
+
+### 1. Obsidian Markdown note example
+
+Create a note using wikilinks, callouts, and embeds:
 
 ```md
 ---
-type: project
-status: active
-review: 2026-03-31
+title: Project Alpha
+date: 2024-01-15
 tags:
-	- work
-	- writing
+  - project
+  - active
+status: in-progress
 ---
 
-# Redesign README
+# Project Alpha
 
-## Next actions
-- Draft the root README
-- Review folder naming
+This project aims to [[improve workflow]] using modern techniques.
 
-## Related notes
-- [[Ideas/README]]
-- [[References/README]]
+> [!important] Key Deadline
+> The first milestone is due on ==January 30th==.
+
+## Tasks
+
+- [x] Initial planning
+- [ ] Development phase
+  - [ ] Backend implementation
+  - [ ] Frontend design
+
+## Notes
+
+The algorithm uses $O(n \log n)$ sorting. See [[Algorithm Notes#Sorting]] for details.
+
+![[Architecture Diagram.png|600]]
 ```
 
-Create a lightweight idea note in [Ideas](Ideas):
+### 2. Bases file example
 
-```md
----
-type: idea
-created: 2026-03-31
----
+Create a `.base` file (for example, `tasks.base` in [Bases](Bases)):
 
-# Weekly review template
+```yaml
+filters:
+  and:
+    - file.hasTag("task")
+    - 'file.ext == "md"'
 
-Turn the weekly folder into a repeatable review workflow with prompts for wins, blockers, and next actions.
+formulas:
+  days_until_due: 'if(due, (date(due) - today()).days, "")'
+
+views:
+  - type: table
+    name: "Active Tasks"
+    filters:
+      and:
+        - 'status != "done"'
+    order:
+      - file.name
+      - status
+      - due
+      - formula.days_until_due
+```
+
+### 3. JSON Canvas file example
+
+Create a `.canvas` file (for example, `research.canvas` in [Canvases](Canvases)):
+
+```json
+{
+  "nodes": [
+    {
+      "id": "8a9b0c1d2e3f4a5b",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 150,
+      "text": "# Main Idea\\n\\nThis is the central concept."
+    },
+    {
+      "id": "1a2b3c4d5e6f7a8b",
+      "type": "text",
+      "x": 400,
+      "y": -100,
+      "width": 250,
+      "height": 100,
+      "text": "## Supporting Point A\\n\\nDetails here."
+    }
+  ],
+  "edges": [
+    {
+      "id": "3c4d5e6f7a8b9c0d",
+      "fromNode": "8a9b0c1d2e3f4a5b",
+      "fromSide": "right",
+      "toNode": "1a2b3c4d5e6f7a8b",
+      "toSide": "left"
+    }
+  ]
+}
 ```
 
 ## Where To Get Help

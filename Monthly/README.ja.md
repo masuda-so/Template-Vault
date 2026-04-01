@@ -19,10 +19,15 @@
 
 月ごとに 1 ノート作成します（例: `2026-03`）。
 
+## 利用例
+
 ```md
 ---
 type: monthly
 period: 2026-03
+tags:
+  - monthly
+  - strategy
 ---
 
 # 2026年3月レビュー
@@ -37,8 +42,15 @@ period: 2026-03
 ## 改善点
 - 昇格されないアイデアが増えた
 
+> [!important] 月次判断
+> 実行可能な項目は [[Projects/README]] に移し、原則は [[References/README]] に残す。
+
 ## 来月の焦点
 - アクティブなアイデアを Projects に移す
+
+## 関連ノート
+- [[Weekly/README]]
+- [[Projects/README]]
 ```
 
 ## ヘルプ・サポート

@@ -73,40 +73,105 @@ git clone https://github.com/masuda-so/Template-Vault.git
 
 ## 利用例
 
-[Projects](Projects) に作るプロジェクトノート例:
+以下は [.claude/skills](.claude/skills) の obsidian-skills 由来パターンをもとにした例です。
+
+### 1. Obsidian Markdown ノート例
+
+ウィキリンク、コールアウト、埋め込みを使ったノート:
 
 ```md
 ---
-type: project
-status: active
-review: 2026-03-31
+title: Project Alpha
+date: 2024-01-15
 tags:
-	- work
-	- writing
+  - project
+  - active
+status: in-progress
 ---
 
-# README 再設計
+# Project Alpha
 
-## 次のアクション
-- ルート README を下書き
-- フォルダ命名を見直し
+このプロジェクトは、モダンな手法でワークフローを改善することを [[improve workflow]] で目指します。
 
-## 関連ノート
-- [[Ideas/README]]
-- [[References/README]]
+> [!important] 重要な期限
+> 最初のマイルストーンは ==1月30日== です。
+
+## Tasks
+
+- [x] Initial planning
+- [ ] Development phase
+  - [ ] Backend implementation
+  - [ ] Frontend design
+
+## Notes
+
+このアルゴリズムは $O(n \log n)$ のソートを使います。詳細は [[Algorithm Notes#Sorting]] を参照。
+
+![[Architecture Diagram.png|600]]
 ```
 
-[Ideas](Ideas) に作る軽量メモ例:
+### 2. Bases ファイル例
 
-```md
----
-type: idea
-created: 2026-03-31
----
+[Bases](Bases) に置く `.base` ファイル例（例: `tasks.base`）:
 
-# 週次レビューのテンプレート
+```yaml
+filters:
+  and:
+    - file.hasTag("task")
+    - 'file.ext == "md"'
 
-勝ち筋、課題、次アクションを毎週同じ流れで振り返る。
+formulas:
+  days_until_due: 'if(due, (date(due) - today()).days, "")'
+
+views:
+  - type: table
+    name: "Active Tasks"
+    filters:
+      and:
+        - 'status != "done"'
+    order:
+      - file.name
+      - status
+      - due
+      - formula.days_until_due
+```
+
+### 3. JSON Canvas ファイル例
+
+[Canvases](Canvases) に置く `.canvas` ファイル例（例: `research.canvas`）:
+
+```json
+{
+  "nodes": [
+    {
+      "id": "8a9b0c1d2e3f4a5b",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 150,
+      "text": "# Main Idea\\n\\nThis is the central concept."
+    },
+    {
+      "id": "1a2b3c4d5e6f7a8b",
+      "type": "text",
+      "x": 400,
+      "y": -100,
+      "width": 250,
+      "height": 100,
+      "text": "## Supporting Point A\\n\\nDetails here."
+    }
+  ],
+  "edges": [
+    {
+      "id": "3c4d5e6f7a8b9c0d",
+      "fromNode": "8a9b0c1d2e3f4a5b",
+      "fromSide": "right",
+      "toNode": "1a2b3c4d5e6f7a8b",
+      "toSide": "left"
+    }
+  ]
+}
 ```
 
 ## ヘルプ・サポート

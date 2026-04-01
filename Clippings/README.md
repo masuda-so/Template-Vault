@@ -45,6 +45,23 @@ Get the Obsidian Web Clipper extension from the official directory for your brow
 - [[Logic]]
 	- Use conditionals, loops, and set variables in templates.
 
+## Usage Example
+
+Example clipping note format:
+
+```md
+---
+type: clipping
+source: https://example.com/article
+captured: 2026-04-01
+---
+
+# Obsidian workflow article notes
+
+- Quote 1
+- Quote 2
+```
+
 ## Privacy
 
 Obsidian Web Clipper saves content locally to your Obsidian vault and follows our [privacy policy](https://obsidian.md/privacy). Your data is not collected, and we do not gather any usage metrics. The code is [open source](https://github.com/obsidianmd/obsidian-clipper) and auditable.

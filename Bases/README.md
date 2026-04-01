@@ -43,3 +43,54 @@ View can be displayed with different layouts. Additional layouts can be added by
 	- Display files as a grid. Lets you create gallery-like views with images.
 - [[Map view|Map]]
 	- Display files as pins on an interactive map.
+
+## Usage Example
+
+Example `.base` file pattern aligned with the Task Tracker Base example in obsidian-skills:
+
+```yaml
+filters:
+  and:
+    - file.hasTag("task")
+    - 'file.ext == "md"'
+
+formulas:
+  days_until_due: 'if(due, (date(due) - today()).days, "")'
+  is_overdue: 'if(due, date(due) < today() && status != "done", false)'
+  priority_label: 'if(priority == 1, "🔴 High", if(priority == 2, "🟡 Medium", "🟢 Low"))'
+
+properties:
+  status:
+    displayName: Status
+  formula.days_until_due:
+    displayName: "Days Until Due"
+  formula.priority_label:
+    displayName: Priority
+
+views:
+  - type: table
+    name: "Active Tasks"
+    filters:
+      and:
+        - 'status != "done"'
+    order:
+      - file.name
+      - status
+      - formula.priority_label
+      - due
+      - formula.days_until_due
+    groupBy:
+      property: status
+      direction: ASC
+    summaries:
+      formula.days_until_due: Average
+
+  - type: table
+    name: "Completed"
+    filters:
+      and:
+        - 'status == "done"'
+    order:
+      - file.name
+      - completed_date
+```

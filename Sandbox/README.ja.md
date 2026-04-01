@@ -24,6 +24,43 @@
 
 Vault のローカルファースト思想は [Vault is just a local folder.md](Vault%20is%20just%20a%20local%20folder.md) を参照してください。
 
+## 利用例
+
+obsidian-skills の complete example に合わせた Obsidian Markdown 例:
+
+```md
+---
+title: Project Alpha
+date: 2024-01-15
+tags:
+  - project
+  - active
+status: in-progress
+---
+
+# Project Alpha
+
+このプロジェクトは、モダンな手法でワークフローを改善することを [[improve workflow]] で目指します。
+
+> [!important] 重要な期限
+> 最初のマイルストーンは ==1月30日== です。
+
+## Tasks
+
+- [x] Initial planning
+- [ ] Development phase
+  - [ ] Backend implementation
+  - [ ] Frontend design
+
+## Notes
+
+このアルゴリズムは $O(n \log n)$ のソートを使います。詳細は [[Algorithm Notes#Sorting]] を参照。
+
+![[Architecture Diagram.png|600]]
+
+Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
+```
+
 ## ヘルプ・サポート
 
 - 公式 Obsidian ヘルプ: https://help.obsidian.md/

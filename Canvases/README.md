@@ -248,3 +248,41 @@ To change the zoom level back to the default, select **Reset zoom** in the zoom 
 We have made some quick videos to demonstrate some advanced use cases of Canvas.
 
 You can [check out all 72 tips here](https://obsidian.md/canvas#protips). Please note that the tip videos are only visible on desktop.
+
+## Usage Example
+
+Example `.canvas` file pattern aligned with obsidian-skills:
+
+```json
+{
+	"nodes": [
+		{
+			"id": "8a9b0c1d2e3f4a5b",
+			"type": "text",
+			"x": 0,
+			"y": 0,
+			"width": 300,
+			"height": 150,
+			"text": "# Main Idea\n\nThis is the central concept."
+		},
+		{
+			"id": "1a2b3c4d5e6f7a8b",
+			"type": "text",
+			"x": 400,
+			"y": -100,
+			"width": 250,
+			"height": 100,
+			"text": "## Supporting Point A\n\nDetails here."
+		}
+	],
+	"edges": [
+		{
+			"id": "3c4d5e6f7a8b9c0d",
+			"fromNode": "8a9b0c1d2e3f4a5b",
+			"fromSide": "right",
+			"toNode": "1a2b3c4d5e6f7a8b",
+			"toSide": "left"
+		}
+	]
+}
+```
