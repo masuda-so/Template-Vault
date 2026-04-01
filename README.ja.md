@@ -135,3 +135,10 @@ created: 2026-03-31
 4. 変更意図を添えて Pull Request を作成
 
 大きな構造変更は、先に Issue で方針相談してください。
+
+## サードパーティ表記
+
+このリポジトリには kepano/obsidian-skills 由来の内容が含まれます。
+必要な著作権表示および許諾表示は
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) に記載しており、関連する
+内容のすべての複製または重要な部分に含める必要があります。
