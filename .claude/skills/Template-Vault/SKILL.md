@@ -4,90 +4,88 @@
 > Auto-generated skill from repository analysis
 
 ## Overview
-This skill teaches you the core development patterns used in the Template-Vault repository, a TypeScript codebase with no detected framework. You'll learn about file naming, import/export conventions, commit patterns, and how to write and run tests. The guide also provides suggested commands for common workflows to streamline your development process.
+This skill teaches you the core development patterns used in the Template-Vault repository, a TypeScript codebase with a focus on clear file organization, consistent import/export styles, and a straightforward approach to testing. You'll learn how to structure files, write and organize code, and follow the project's conventions to contribute effectively.
 
 ## Coding Conventions
 
 ### File Naming
-- Use **camelCase** for file names.
-  - Example: `myComponent.ts`, `userService.test.ts`
+- **Pattern:** PascalCase
+- **Example:**  
+  `UserProfile.ts`, `DataManager.ts`
 
 ### Import Style
-- Use **relative imports** for referencing other modules.
-  - Example:
-    ```typescript
-    import { helperFunction } from './utils/helperFunction';
-    ```
+- **Pattern:** Relative imports
+- **Example:**
+  ```typescript
+  import { UserProfile } from './UserProfile';
+  import { DataManager } from '../utils/DataManager';
+  ```
 
 ### Export Style
-- Use **named exports** for all modules.
-  - Example:
-    ```typescript
-    // In utils/helperFunction.ts
-    export function helperFunction() { ... }
+- **Pattern:** Named exports
+- **Example:**
+  ```typescript
+  // In UserProfile.ts
+  export function UserProfile() { /* ... */ }
 
-    // In another file
-    import { helperFunction } from './utils/helperFunction';
-    ```
+  // In DataManager.ts
+  export const DataManager = { /* ... */ };
+  ```
 
-### Commit Patterns
-- Commit types are **mixed**, but commonly use the `feat` prefix for new features.
-- Commit messages average **46 characters** in length.
-  - Example: `feat: add user authentication middleware`
+### Commit Messages
+- **Pattern:** Freeform, no strict prefixes
+- **Average Length:** ~50 characters
+- **Example:**  
+  `Add user profile component and update data manager`
 
 ## Workflows
 
-### Adding a New Feature
-**Trigger:** When implementing a new feature or module  
-**Command:** `/add-feature`
+### Adding a New Module
+**Trigger:** When you need to introduce a new feature or component  
+**Command:** `/add-module`
 
-1. Create a new file using camelCase naming (e.g., `newFeature.ts`).
+1. Create a new file using PascalCase (e.g., `NewFeature.ts`).
 2. Use relative imports to include dependencies.
-3. Export your functions or classes using named exports.
-4. Write corresponding tests in a file named `newFeature.test.ts`.
-5. Commit your changes with a message starting with `feat:`, e.g., `feat: implement new feature logic`.
+3. Export your functions or constants using named exports.
+4. Write corresponding test files as `NewFeature.test.ts`.
 
-### Writing and Running Tests
+### Updating an Existing Module
+**Trigger:** When modifying or extending existing functionality  
+**Command:** `/update-module`
+
+1. Locate the relevant PascalCase file.
+2. Make changes, maintaining relative imports and named exports.
+3. Update or add tests in the corresponding `*.test.ts` file.
+4. Commit changes with a concise, descriptive message.
+
+### Writing Tests
 **Trigger:** When adding or updating functionality  
-**Command:** `/run-tests`
+**Command:** `/write-test`
 
-1. Create a test file with the pattern `*.test.ts` (e.g., `userService.test.ts`).
-2. Write tests for your functions or classes.
-3. Use the project's preferred test runner (framework not specified; check project documentation or package.json).
-4. Run your tests to ensure all pass before committing.
-
-### Refactoring Code
-**Trigger:** When improving or restructuring existing code  
-**Command:** `/refactor`
-
-1. Identify code to refactor.
-2. Update file names to camelCase if needed.
-3. Adjust imports/exports to maintain relative and named conventions.
-4. Update or add tests as necessary.
-5. Commit with a descriptive message, e.g., `refactor: optimize user data processing`.
+1. Create or update a test file matching the pattern `ModuleName.test.ts`.
+2. Write tests using the project's preferred (unknown) framework.
+3. Ensure all new and existing tests pass before committing.
 
 ## Testing Patterns
 
-- Test files follow the `*.test.ts` naming convention.
-- The testing framework is **unknown**; check the project documentation or `package.json` for details.
-- Example test file:
+- **Test File Pattern:** `*.test.*` (e.g., `UserProfile.test.ts`)
+- **Framework:** Not specified; follow standard TypeScript testing practices.
+- **Example:**
   ```typescript
-  // userService.test.ts
-  import { getUser } from './userService';
+  // UserProfile.test.ts
+  import { UserProfile } from './UserProfile';
 
-  describe('getUser', () => {
-    it('should return user data for a valid ID', () => {
-      const user = getUser(1);
-      expect(user).toBeDefined();
+  describe('UserProfile', () => {
+    it('should initialize correctly', () => {
+      // test implementation
     });
   });
   ```
 
 ## Commands
-
-| Command       | Purpose                                      |
-|---------------|----------------------------------------------|
-| /add-feature  | Scaffold and commit a new feature/module     |
-| /run-tests    | Run all test files matching `*.test.ts`      |
-| /refactor     | Refactor code and update related tests       |
+| Command         | Purpose                                      |
+|-----------------|----------------------------------------------|
+| /add-module     | Scaffold a new module with proper conventions|
+| /update-module  | Update an existing module                    |
+| /write-test     | Create or update a test file                 |
 ```
