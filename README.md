@@ -32,6 +32,7 @@ Use it as a personal knowledge base, journal, project hub, or as a starting poin
 | [References](References) | Evergreen reference material |
 | [Clippings](Clippings) | Saved excerpts and source material |
 | [Meta](Meta) | Vault-level notes about process, systems, and maintenance |
+| [Templates](Templates) | Insertable note templates for each folder type |
 | [Bases](Bases) | Predefined Obsidian Bases definitions (`*.base`) |
 | [Sandbox](Sandbox) | Obsidian onboarding guides and formatting examples |
 | [Canvases](Canvases) | Visual canvases and whiteboard-style work |
@@ -54,11 +55,23 @@ Or download the repository as a ZIP and extract it locally.
 
 ### 3. Start with the built-in onboarding notes
 
-- Read [ようこそ.md](ようこそ.md) for the default welcome note.
-- Open [Sandbox/Start here.md](Sandbox/Start%20here.md) for a guided introduction.
+- Read [ようこそ.md](ようこそ.md) for a guided vault tour and first-steps checklist.
+- Open [Sandbox/Start here.md](Sandbox/Start%20here.md) for a hands-on Obsidian introduction.
 - Continue with [Sandbox/Guides/Get started with Obsidian.md](Sandbox/Guides/Get%20started%20with%20Obsidian.md).
 
-### 4. Begin using the folder structure
+### 4. Enable Obsidian Core Plugins
+
+Open **Settings → Core plugins** and turn on:
+
+| Plugin | Purpose |
+| --- | --- |
+| **Templates** | Insert templates from the `Templates/` folder |
+| **Daily notes** | Create date-stamped notes in `Daily/` with one click |
+| **Bases** | Browse notes as tables or cards using the `.base` files in `Bases/` |
+
+After enabling Templates, set **Settings → Templates → Template folder location** to `Templates`.
+
+### 5. Begin using the folder structure
 
 A practical starting workflow:
 
@@ -67,9 +80,23 @@ A practical starting workflow:
 3. Keep source material in [References](References) or [Clippings](Clippings).
 4. Review open work in [Weekly](Weekly) and [Monthly](Monthly).
 
-### 5. Explore Bases views
+### 6. Explore Bases views
 
 The [Bases](Bases) directory contains `.base` files for common collections such as books, music, people, places, projects, recipes, shows, and trips. Open them in Obsidian with the Bases feature enabled to browse related notes as tables or cards.
+
+## Obsidian Configuration Policy
+
+The `.obsidian/` directory is **not tracked** in this repository (see `.gitignore`).
+
+Each user's Obsidian configuration—themes, installed plugins, workspace layout—is personal and device-specific. Tracking it would cause conflicts when multiple people use the same vault on different machines or with different Obsidian versions.
+
+After cloning, enable the plugins listed in **Get Started → Step 4** above to restore the intended experience.
+
+## About the `.claude/` Directory
+
+The `.claude/` directory contains [Claude Code](https://claude.ai/code) configuration files, including skills and prompt context used during development of this repository. It is tracked intentionally so that contributors using Claude Code can benefit from the same context when working on vault structure improvements.
+
+If you are not using Claude Code, you can safely ignore this directory.
 
 ## Usage Examples
 
