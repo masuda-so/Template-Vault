@@ -1,0 +1,6 @@
+# Obsidian configuration directory
+# Each user's Obsidian settings (theme, plugins, workspace layout) are personal.
+# Do not track .obsidian/ in this repository.
+# After cloning, open the vault in Obsidian and enable plugins manually:
+#   Settings → Core plugins → Templates, Daily notes, Bases
+.obsidian/
