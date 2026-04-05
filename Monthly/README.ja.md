@@ -1,5 +1,7 @@
 # Monthly
 
+[English version](README.md)
+
 月単位の計画、振り返り、方向修正を行うフォルダです。
 
 ## このフォルダでできること

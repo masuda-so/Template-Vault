@@ -1,5 +1,7 @@
 # Sandbox
 
+[English version](README.md)
+
 この Vault の学習と実験を安全に行うためのフォルダです。
 
 ## このフォルダでできること

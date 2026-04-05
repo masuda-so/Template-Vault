@@ -1,5 +1,7 @@
 # Bases
 
+[English version](README.md)
+
 Obsidian の Bases 機能を使って、ノートを表やカードで一覧化するための定義を管理するフォルダです。
 
 ## このフォルダでできること

@@ -1,5 +1,7 @@
 # Canvases
 
+[English version](README.md)
+
 視覚的なノート整理のための `.canvas` ファイルを置くフォルダです。
 
 ## このフォルダでできること

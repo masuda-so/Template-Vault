@@ -1,5 +1,7 @@
 # Projects
 
+[日本語版はこちら](README.ja.md)
+
 Track active work that needs multiple steps, decisions, or follow-up.
 
 ## What This Folder Does

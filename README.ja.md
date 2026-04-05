@@ -1,6 +1,8 @@
 # Template Vault
 
-Obsidian 向けの、構造化されたスターター Vault テンプレートです。アイデアの収集、定期レビュー、知識整理を、フォルダ運用と Bases ビューで始めやすくします。
+[English version](README.md)
+
+Obsidian 向けの、運用方針をあらかじめ備えたスターター Vault です。ノートの記録、継続的なレビュー、フォルダ運用と Bases ビューによる整理を始めやすくします。
 
 ## このプロジェクトでできること
 
@@ -118,10 +120,10 @@ status: in-progress
 
 # Project Alpha
 
-このプロジェクトは、モダンな手法でワークフローを改善することを [[improve workflow]] で目指します。
+This project aims to [[improve workflow]] using modern techniques.
 
-> [!important] 重要な期限
-> 最初のマイルストーンは ==1月30日== です。
+> [!important] Key Deadline
+> The first milestone is due on ==January 30th==.
 
 ## Tasks
 
@@ -132,7 +134,7 @@ status: in-progress
 
 ## Notes
 
-このアルゴリズムは $O(n \log n)$ のソートを使います。詳細は [[Algorithm Notes#Sorting]] を参照。
+The algorithm uses $O(n \log n)$ sorting. See [[Algorithm Notes#Sorting]] for details.
 
 ![[Architecture Diagram.png|600]]
 ```

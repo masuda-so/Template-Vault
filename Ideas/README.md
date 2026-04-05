@@ -1,5 +1,7 @@
 # Ideas
 
+[日本語版はこちら](README.ja.md)
+
 Capture early-stage thoughts before they become projects, reference notes, or archived decisions.
 
 ## What This Folder Does

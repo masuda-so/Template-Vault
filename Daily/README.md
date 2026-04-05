@@ -1,5 +1,7 @@
 # Daily
 
+[日本語版はこちら](README.ja.md)
+
 Capture day-level notes, logs, and quick tasks that feed your weekly and monthly reviews.
 
 ## What This Folder Does

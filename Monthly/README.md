@@ -1,5 +1,7 @@
 # Monthly
 
+[日本語版はこちら](README.ja.md)
+
 Use this folder for month-level planning, review, and reflection.
 
 ## What This Folder Does

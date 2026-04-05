@@ -1,5 +1,7 @@
 # References
 
+[日本語版はこちら](README.ja.md)
+
 Keep durable notes here: material you expect to revisit, connect, and reuse over time.
 
 ## What This Folder Does
