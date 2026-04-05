@@ -1,5 +1,7 @@
 # Ideas
 
+[English version](README.md)
+
 まだ形が固まっていない着想を記録し、必要に応じて Projects や References に昇格させるフォルダです。
 
 ## このフォルダでできること

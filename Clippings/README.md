@@ -1,5 +1,7 @@
 # Clippings
 
+[日本語版はこちら](README.ja.md)
+
 ---
 aliases:
   - Web Clipper

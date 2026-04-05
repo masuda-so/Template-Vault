@@ -1,5 +1,7 @@
 # Clippings
 
+[English version](README.md)
+
 Web や資料から取得した抜粋、引用、一次ソースを保存するフォルダです。
 
 ## このフォルダでできること
