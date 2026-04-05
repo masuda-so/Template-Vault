@@ -1,5 +1,7 @@
 # Canvases
 
+[日本語版はこちら](README.ja.md)
+
 ---
 permalink: plugins/canvas
 ---

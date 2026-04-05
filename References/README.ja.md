@@ -1,5 +1,7 @@
 # References
 
+[English version](README.md)
+
 長期的に再利用する知識ノートを蓄積するフォルダです。
 
 ## このフォルダでできること

@@ -1,5 +1,7 @@
 # Sandbox
 
+[日本語版はこちら](README.ja.md)
+
 Use this folder as the learning and experimentation area of the vault.
 
 ## What This Folder Does

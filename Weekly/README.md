@@ -1,5 +1,7 @@
 # Weekly
 
+[日本語版はこちら](README.ja.md)
+
 Use this folder for weekly planning and review notes.
 
 ## What This Folder Does

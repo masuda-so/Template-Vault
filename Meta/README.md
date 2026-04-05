@@ -1,5 +1,7 @@
 # Meta
 
+[日本語版はこちら](README.ja.md)
+
 Store notes about how this vault works, how you want to maintain it, and which conventions you want to keep stable over time.
 
 ## What This Folder Does
