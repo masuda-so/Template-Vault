@@ -1,0 +1,25 @@
+name: Vault Documentation Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  vault-hygiene:
+    name: Vault hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check banned vault artifacts
+        run: |
+          set -eu
+          if find . -path ./.git -prune -o -type f \( -name '.DS_Store' -o -name 'memory.db' -o -name 'Thumbs.db' -o -name '.env' \) -print | grep .; then
+            echo "Banned vault artifact found."
+            exit 1
+          fi
+      - name: Check README exists
+        run: test -f README.md
