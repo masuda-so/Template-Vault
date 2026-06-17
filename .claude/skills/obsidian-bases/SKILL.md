@@ -482,11 +482,14 @@ formulas:
 **Referencing undefined formulas**: Ensure every `formula.X` in `order` or `properties` has a matching entry in `formulas`.
 
 ```yaml
-# This will fail silently if 'total' is not defined in formulas
+# WRONG - 'total' is referenced but not defined in formulas
 order:
   - formula.total
 
-# Fix: define it
+# CORRECT
+order:
+  - formula.total
+
 formulas:
   total: "price * quantity"
 ```
