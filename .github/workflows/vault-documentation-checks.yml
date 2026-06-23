@@ -13,7 +13,7 @@ jobs:
     name: Vault hygiene
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Check banned vault artifacts
         run: |
           set -eu
