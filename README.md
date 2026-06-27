@@ -4,6 +4,8 @@
 
 An opinionated starter vault for Obsidian that gives you a clean structure for capturing notes, reviewing them over time, and organizing them with folder-based workflows and Bases views.
 
+## Overview
+
 ## What This Project Does
 
 This repository is a ready-to-use Obsidian vault template. It combines:
@@ -209,6 +211,16 @@ Create a `.canvas` file (for example, `research.canvas` in [Canvases](Canvases))
 - Check the official Obsidian help site: https://help.obsidian.md/
 - Review formatting examples such as [Sandbox/Formatting/Format your notes.md](Sandbox/Formatting/Format%20your%20notes.md).
 - If you find an issue in this repository, open an issue at https://github.com/masuda-so/Template-Vault/issues
+
+## Status
+
+## Quickstart
+
+## Development
+
+## Support
+
+## License
 
 ## Maintainers And Contributing
 
