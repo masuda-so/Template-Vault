@@ -1,7 +1,5 @@
 # Template Vault
 
-[日本語版はこちら](README.ja.md)
-
 An opinionated starter vault for Obsidian that gives you a clean structure for capturing notes, reviewing them over time, and organizing them with folder-based workflows and Bases views.
 
 ## Overview
